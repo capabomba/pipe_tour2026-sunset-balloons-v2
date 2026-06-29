@@ -1,0 +1,5983 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://ticketoptimizer.pythonanywhere.com/results/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+
+      <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./Pipe Tour 2026 no Gold Piranha and WEgg (june 2026) Ticket Optimizer_files/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Ticket Optimizer</title>
+    <style>
+        /* Hide arrows from number boxes: https://stackoverflow.com/questions/3790935/can-i-hide-the-html5-number-input-s-spin-box */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            /* display: none; <- Crashes Chrome on hover */
+            -webkit-appearance: none;
+            margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+        }
+
+        input[type=number] {
+            -moz-appearance:textfield; /* Firefox */
+        }
+        /* End of hide arrows*/
+
+        /* Table borders */
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        /* Collapsibles (https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible_animate)*/
+        .collapsible, .collapsible-small-green {
+          outline-style: groove;
+          border: 1px solid black;
+          background-color: #777;
+          color: white;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          font-size: 15px;
+        }
+
+        .active, .collapsible:hover {
+          background-color: #555;
+        }
+
+        .collapsible-small, .collapsible-small-green, .collapsible-small-red, .collapsible-small-blue, .collapsible-small-gold {
+          width: 30%;
+        }
+
+        .collapsible-small-green {
+          background-color: #0a4f00;
+        }
+
+        .content {
+          padding: 0 18px;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+        }
+    </style>
+      
+
+  </head>
+  <body>
+  
+      <h1>Ticket Optimizer</h1>
+      <h2>Results</h2>
+
+    
+        <button class="collapsible active">Upgrades</button>
+        <div class="content" style="max-height: 676px;">
+        <div class="table-responsive">
+        <table>
+            <tbody><tr>
+                <th>Item</th>
+                <th>Before upgrades</th>
+                <th>After upgrades</th>
+                <th>Level-up tickets used</th>
+                <th>Uncap tickets used</th>
+                <th>Usage</th>
+            </tr>
+            
+                <tr bgcolor="#FDE3FC">
+                    
+                        
+                        <td align="left">
+                            Yellow Mii Racing Suit
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            7/2
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            7/3
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            0
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            10
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            2
+                        </td>
+                        
+                    
+                        
+                    
+                </tr>
+            
+                <tr bgcolor="#FDE3FC">
+                    
+                        
+                        <td align="left">
+                            Donkey Kong Mii Racing Suit
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            1/0
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            8/4
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            22
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            28
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            5
+                        </td>
+                        
+                    
+                        
+                    
+                </tr>
+            
+                <tr bgcolor="#FDE3FC">
+                    
+                        
+                        <td align="left">
+                            Petey Piranha Mii Racing Suit
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            7/2
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            8/4
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            8
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            22
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            6
+                        </td>
+                        
+                    
+                        
+                    
+                </tr>
+            
+                <tr bgcolor="#FDE3FC">
+                    
+                        
+                        <td align="left">
+                            Kamek
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            2/0
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            3/1
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            1
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            1
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            1
+                        </td>
+                        
+                    
+                        
+                    
+                </tr>
+            
+                <tr bgcolor="#fbf4d0">
+                    
+                        
+                        <td align="left">
+                            Yellow Toad (Pit Crew)
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            2/0
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            8/4
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            38
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            28
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            2
+                        </td>
+                        
+                    
+                        
+                    
+                </tr>
+            
+                <tr bgcolor="#fbf4d0">
+                    
+                        
+                        <td align="left">
+                            Green Toad (Pit Crew)
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            2/0
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            8/4
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            38
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            28
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            1
+                        </td>
+                        
+                    
+                        
+                    
+                </tr>
+            
+                <tr bgcolor="#FDE3FC">
+                    
+                        
+                        <td align="left">
+                            Wiggler
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            5/2
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            6/3
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            3
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            10
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            2
+                        </td>
+                        
+                    
+                        
+                    
+                </tr>
+            
+                <tr bgcolor="#FDE3FC">
+                    
+                        
+                        <td align="left">
+                            Desert Tiny Titan
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            1/0
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            8/4
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            22
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            28
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            8
+                        </td>
+                        
+                    
+                        
+                    
+                </tr>
+            
+                <tr bgcolor="#fbf4d0">
+                    
+                        
+                        <td align="left">
+                            Dasher II
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            7/4
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            8/4
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            8
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            0
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            2
+                        </td>
+                        
+                    
+                        
+                    
+                </tr>
+            
+                <tr bgcolor="#FDE3FC">
+                    
+                        
+                        <td align="left">
+                            Tropical Truck
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            7/3
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            7/4
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            0
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            12
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            4
+                        </td>
+                        
+                    
+                        
+                    
+                </tr>
+            
+                <tr bgcolor="#FDE3FC">
+                    
+                        
+                        <td align="left">
+                            Green Comet
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            2/0
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            6/4
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            8
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            28
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            3
+                        </td>
+                        
+                    
+                        
+                    
+                </tr>
+            
+                <tr bgcolor="#fbf4d0">
+                    
+                        
+                        <td align="left">
+                            Yellow Turbo Yoshi
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            2/0
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            8/4
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            38
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            28
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            2
+                        </td>
+                        
+                    
+                        
+                    
+                </tr>
+            
+                <tr bgcolor="#fbf4d0">
+                    
+                        
+                        <td align="left">
+                            Koopa Clown
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            6/0
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            6/4
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            0
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            28
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            1
+                        </td>
+                        
+                    
+                        
+                    
+                </tr>
+            
+                <tr bgcolor="#FDE3FC">
+                    
+                        
+                        <td align="left">
+                            Red Comet
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            4/2
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            5/3
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            2
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            10
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            1
+                        </td>
+                        
+                    
+                        
+                    
+                </tr>
+            
+                <tr bgcolor="#FDE3FC">
+                    
+                        
+                        <td align="left">
+                            Choco Macharon
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            3/0
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            3/1
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            0
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            1
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            1
+                        </td>
+                        
+                    
+                        
+                    
+                </tr>
+            
+                <tr bgcolor="#FDE3FC">
+                    
+                        
+                        <td align="left">
+                            Wiggler Parachute
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            6/2
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            7/4
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            5
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            22
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            4
+                        </td>
+                        
+                    
+                        
+                    
+                </tr>
+            
+                <tr bgcolor="#FDE3FC">
+                    
+                        
+                        <td align="left">
+                            Luigi Golf Cap
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            2/1
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            3/2
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            1
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            5
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            2
+                        </td>
+                        
+                    
+                        
+                    
+                </tr>
+            
+                <tr bgcolor="#FDE3FC">
+                    
+                        
+                        <td align="left">
+                            Sunset Balloons
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            8/0
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            8/4
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            0
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            28
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            8
+                        </td>
+                        
+                    
+                        
+                    
+                </tr>
+            
+                <tr bgcolor="#FDE3FC">
+                    
+                        
+                        <td align="left">
+                            Piranha Plant Balloons
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            1/0
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            7/4
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            14
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            28
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            6
+                        </td>
+                        
+                    
+                        
+                    
+                </tr>
+            
+                <tr bgcolor="#fbf4d0">
+                    
+                        
+                        <td align="left">
+                            8-Bit Jumping Luigi
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            7/3
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            8/4
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            15
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            12
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            2
+                        </td>
+                        
+                    
+                        
+                    
+                </tr>
+            
+                <tr bgcolor="#FDE3FC">
+                    
+                        
+                        <td align="left">
+                            Wonderful Wings
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            5/1
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            5/4
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            0
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            27
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            2
+                        </td>
+                        
+                    
+                        
+                    
+                </tr>
+            
+                <tr bgcolor="#FDE3FC">
+                    
+                        
+                        <td align="left">
+                            Smiley Flower Glider
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            5/2
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            5/3
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            0
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            10
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            2
+                        </td>
+                        
+                    
+                        
+                    
+                </tr>
+            
+                <tr bgcolor="#FDE3FC">
+                    
+                        
+                        <td align="left">
+                            Golden Glider
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            5/2
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            5/3
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            0
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            10
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            1
+                        </td>
+                        
+                    
+                        
+                    
+                </tr>
+            
+                <tr bgcolor="#fbf4d0">
+                    
+                        
+                        <td align="left">
+                            Shell Parachute
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            7/2
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            8/4
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            10
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            22
+                        </td>
+                        
+                    
+                        
+                        <td align="left">
+                            1
+                        </td>
+                        
+                    
+                        
+                    
+                </tr>
+            
+        </tbody></table>
+        </div>
+        </div>
+      
+
+        <button class="collapsible active">Total score</button>
+        <div class="content" style="max-height: 55px;">
+        <div class="table-responsive">
+        <table>
+            <tbody><tr>
+                <th>Total before upgrades</th>
+                <th>Total after upgrades</th>
+                <th>Total improvement</th>
+            </tr>
+            <tr>
+                
+                    <td>2,465,923</td>
+                
+                    <td>2,852,453</td>
+                
+                    <td>386,529</td>
+                
+            </tr>
+        </tbody></table>
+        </div>
+        </div>
+    
+        <button class="collapsible active">Overview by courses</button>
+        <div class="content" style="max-height: 3673px;">
+        <div class="table-responsive">
+        <table>
+            <tbody><tr>
+                <th></th>
+                <th colspan="3">Driver</th>
+                <th colspan="3">Kart</th>
+                <th colspan="3">Glider</th>
+                <th>Score</th>
+                <th>Improvement</th>
+            </tr>
+            
+            
+            <tr><td align="left" bgcolor="#a4e2ff">Piranha Plant Pipeline</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Gold Mii Racing Suit</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Blue Crawly Kart</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Wonderful Garnet</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">715</td>
+            
+            <td align="left">74,438</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Wiggler Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">2250</td>
+                
+            
+                
+                    <td align="left">Blue Crawly Kart</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Wiggler Parachute</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">7</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">805</td>
+                
+            
+                
+                    <td align="left">78,029</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">3,591</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">GBA Yoshi Desert R</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Yellow Mii Racing Suit</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">1830</td>
+            
+            <td align="left">Silver Cupid's Arrow</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Wonderful Diamond</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">55,630</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Yellow Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">7</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">2070</td>
+                
+            
+                
+                    <td align="left">Silver Cupid's Arrow</td>
+                
+            
+                
+                    <td align="left">6</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left">Wonderful Diamond</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left">58,214</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">2,584</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">Piranha Plant Cove 2T</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Wiggler Mii Racing Suit</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Armored Rider</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Royal Flush</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">715</td>
+            
+            <td align="left">72,913</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left">Wiggler Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">2250</td>
+                
+            
+                
+                    <td align="left">Armored Rider</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left">Royal Flush</td>
+                
+            
+                
+                    <td align="left">6</td>
+                
+            
+                
+                    <td align="left">715</td>
+                
+            
+                
+                    <td align="left">72,913</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">0</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">N64 Kalimari Desert 2</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Gold Mii Racing Suit</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Cucumber</td>
+            
+            <td align="left">5</td>
+            
+            <td align="left">366</td>
+            
+            <td align="left">Chocolate Banana Crêpe</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">400</td>
+            
+            <td align="left">47,860</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left">Gold Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">2250</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">Desert Tiny Titan</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">805</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Luigi Golf Cap</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">3</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">595</td>
+                
+            
+                
+                    <td align="left">55,998</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">8,138</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">GCN Dino Dino Jungle R</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Yoshi</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">765</td>
+            
+            <td align="left">Green Turbo Birdo</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">492</td>
+            
+            <td align="left">Wiggler Parachute</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">595</td>
+            
+            <td align="left">38,191</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Donkey Kong Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">2250</td>
+                
+            
+                
+                    <td align="left">Green Turbo Birdo</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">492</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Wiggler Parachute</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">7</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">805</td>
+                
+            
+                
+                    <td align="left">70,016</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">31,825</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">GBA Sunset Wilds T</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Luigi (Gold Knight)</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">1430</td>
+            
+            <td align="left">Silver Cupid's Arrow</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Wiggler Parachute</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">595</td>
+            
+            <td align="left">54,165</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left">Luigi (Gold Knight)</td>
+                
+            
+                
+                    <td align="left">7</td>
+                
+            
+                
+                    <td align="left">1430</td>
+                
+            
+                
+                    <td align="left">Silver Cupid's Arrow</td>
+                
+            
+                
+                    <td align="left">6</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Sunset Balloons</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">805</td>
+                
+            
+                
+                    <td align="left">59,835</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">5,670</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">Piranha Plant Pipeline R/T</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Petey Piranha Mii Racing Suit</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">1830</td>
+            
+            <td align="left">Black B Dasher Mk. 2</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Royal Flush</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">715</td>
+            
+            <td align="left">61,408</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Petey Piranha Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">2250</td>
+                
+            
+                
+                    <td align="left">Black B Dasher Mk. 2</td>
+                
+            
+                
+                    <td align="left">6</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Piranha Plant Balloons</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">7</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">805</td>
+                
+            
+                
+                    <td align="left">74,262</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">12,854</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">Piranha Plant Cove R</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Wiggler Mii Racing Suit</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Armored Rider</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Gold Candlelight Flight</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">63,748</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left">Wiggler Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">2250</td>
+                
+            
+                
+                    <td align="left">Armored Rider</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left">Gold Candlelight Flight</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left">63,748</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">0</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">Wii Dry Dry Ruins R/T</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Daisy Mii Racing Suit</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Silver Warrior Wagon</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">595</td>
+            
+            <td align="left">Wonderful Diamond</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">56,970</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left">Daisy Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">2250</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">Desert Tiny Titan</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">805</td>
+                
+            
+                
+                    <td align="left">Wonderful Diamond</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left">61,439</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">4,469</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">GBA Battle Course 1</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Gold Mii Racing Suit</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Dasher II</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">492</td>
+            
+            <td align="left">8-Bit Jumping Luigi</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">456</td>
+            
+            <td align="left">74,185</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left">Gold Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">2250</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">Dasher II</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">492</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8-Bit Jumping Luigi</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">492</td>
+                
+            
+                
+                    <td align="left">77,151</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">2,966</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">N64 Kalimari Desert R</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Gold Mii Racing Suit</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Rambi Rider</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">492</td>
+            
+            <td align="left">Lightning Oilpaper</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">492</td>
+            
+            <td align="left">67,397</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left">Gold Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">2250</td>
+                
+            
+                
+                    <td align="left">Rambi Rider</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">492</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Sunset Balloons</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">805</td>
+                
+            
+                
+                    <td align="left">72,161</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">4,764</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">3DS Piranha Plant Slide T</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Wiggler Mii Racing Suit</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Blue Crawly Kart</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Mint &amp; Berry Balloons</td>
+            
+            <td align="left">4</td>
+            
+            <td align="left">490</td>
+            
+            <td align="left">72,713</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Petey Piranha Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">2250</td>
+                
+            
+                
+                    <td align="left">Blue Crawly Kart</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Wonderful Wings</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">5</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">805</td>
+                
+            
+                
+                    <td align="left">76,290</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">3,577</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">Piranha Plant Cove 2R</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Petey Piranha Mii Racing Suit</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">1830</td>
+            
+            <td align="left">Blue Crawly Kart</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Gold Candlelight Flight</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">67,634</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Petey Piranha Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">2250</td>
+                
+            
+                
+                    <td align="left">Blue Crawly Kart</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left">Gold Candlelight Flight</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left">77,624</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">9,990</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">Wii Dry Dry Ruins</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Yellow Mii Racing Suit</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">1830</td>
+            
+            <td align="left">Red Turbo Birdo</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">492</td>
+            
+            <td align="left">8-Bit Block Glider</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">715</td>
+            
+            <td align="left">54,702</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Yellow Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">7</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">2070</td>
+                
+            
+                
+                    <td align="left">Red Turbo Birdo</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">492</td>
+                
+            
+                
+                    <td align="left">8-Bit Block Glider</td>
+                
+            
+                
+                    <td align="left">6</td>
+                
+            
+                
+                    <td align="left">715</td>
+                
+            
+                
+                    <td align="left">57,678</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">2,976</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">GBA Yoshi Desert T</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Larry Mii Racing Suit</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">2070</td>
+            
+            <td align="left">Orange Turbo Birdo</td>
+            
+            <td align="left">4</td>
+            
+            <td align="left">456</td>
+            
+            <td align="left">8-Bit Super Glider</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">490</td>
+            
+            <td align="left">49,306</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left">Larry Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left">7</td>
+                
+            
+                
+                    <td align="left">2070</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">Desert Tiny Titan</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">805</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Luigi Golf Cap</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">3</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">595</td>
+                
+            
+                
+                    <td align="left">58,884</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">9,578</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">GCN Dino Dino Jungle</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Morton Mii Racing Suit</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">DK Jumbo</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">492</td>
+            
+            <td align="left">Oilpaper Umbrella</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">492</td>
+            
+            <td align="left">62,011</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left">Morton Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">2250</td>
+                
+            
+                
+                    <td align="left">DK Jumbo</td>
+                
+            
+                
+                    <td align="left">7</td>
+                
+            
+                
+                    <td align="left">492</td>
+                
+            
+                
+                    <td align="left">Oilpaper Umbrella</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">492</td>
+                
+            
+                
+                    <td align="left">62,011</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">0</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">N64 Kalimari Desert 2T</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Pauline (Cowgirl)</td>
+            
+            <td align="left">4</td>
+            
+            <td align="left">1190</td>
+            
+            <td align="left">Chain Chomp Chariot</td>
+            
+            <td align="left">5</td>
+            
+            <td align="left">715</td>
+            
+            <td align="left">Smiley Flower Glider</td>
+            
+            <td align="left">5</td>
+            
+            <td align="left">595</td>
+            
+            <td align="left">34,850</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Donkey Kong Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">2250</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">Desert Tiny Titan</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">805</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Smiley Flower Glider</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">5</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">715</td>
+                
+            
+                
+                    <td align="left">58,684</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">23,834</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">DS Twilight House</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Kamek</td>
+            
+            <td align="left">2</td>
+            
+            <td align="left">800</td>
+            
+            <td align="left">Blue Crawly Kart</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Sunset Balloons</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">400</td>
+            
+            <td align="left">44,500</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Kamek</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">3</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">980</td>
+                
+            
+                
+                    <td align="left">Blue Crawly Kart</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Sunset Balloons</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">805</td>
+                
+            
+                
+                    <td align="left">53,080</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">8,580</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">GBA Sunset Wilds</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Daisy Mii Racing Suit</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Tropical Truck</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">715</td>
+            
+            <td align="left">Sunset Balloons</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">400</td>
+            
+            <td align="left">54,695</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left">Daisy Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">2250</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">Tropical Truck</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">7</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">805</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Sunset Balloons</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">805</td>
+                
+            
+                
+                    <td align="left">60,271</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">5,576</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">Piranha Plant Pipeline T</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Toad (Tourist)</td>
+            
+            <td align="left">5</td>
+            
+            <td align="left">1190</td>
+            
+            <td align="left">Green Comet</td>
+            
+            <td align="left">2</td>
+            
+            <td align="left">400</td>
+            
+            <td align="left">Wiggler Parachute</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">595</td>
+            
+            <td align="left">40,222</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left">Toad (Tourist)</td>
+                
+            
+                
+                    <td align="left">5</td>
+                
+            
+                
+                    <td align="left">1190</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">Green Comet</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">6</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">805</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Wiggler Parachute</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">7</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">805</td>
+                
+            
+                
+                    <td align="left">52,364</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">12,142</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">Piranha Plant Cove</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Larry Mii Racing Suit</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">2070</td>
+            
+            <td align="left">Blue Crawly Kart</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Gold Candlelight Flight</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">67,675</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left">Larry Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left">7</td>
+                
+            
+                
+                    <td align="left">2070</td>
+                
+            
+                
+                    <td align="left">Blue Crawly Kart</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left">Gold Candlelight Flight</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left">67,675</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">0</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">N64 Kalimari Desert</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Morton</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">816</td>
+            
+            <td align="left">Chain Chomp Chariot</td>
+            
+            <td align="left">5</td>
+            
+            <td align="left">715</td>
+            
+            <td align="left">Lightning Oilpaper</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">492</td>
+            
+            <td align="left">37,918</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Yellow Toad (Pit Crew)</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">1080</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">Yellow Turbo Yoshi</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">492</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Sunset Balloons</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">805</td>
+                
+            
+                
+                    <td align="left">46,613</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">8,695</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">Wii Dry Dry Ruins T</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Gold Mii Racing Suit</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Chain Chomp Chariot</td>
+            
+            <td align="left">5</td>
+            
+            <td align="left">715</td>
+            
+            <td align="left">Golden Glider</td>
+            
+            <td align="left">5</td>
+            
+            <td align="left">595</td>
+            
+            <td align="left">64,270</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left">Gold Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">2250</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">Desert Tiny Titan</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">805</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Golden Glider</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">5</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">715</td>
+                
+            
+                
+                    <td align="left">71,385</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">7,115</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">GBA Yoshi Desert</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Gold Mii Racing Suit</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Red Turbo Birdo</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">492</td>
+            
+            <td align="left">Wonderful Garnet</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">715</td>
+            
+            <td align="left">68,042</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left">Gold Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">2250</td>
+                
+            
+                
+                    <td align="left">Red Turbo Birdo</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">492</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Piranha Plant Balloons</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">7</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">805</td>
+                
+            
+                
+                    <td align="left">70,847</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">2,805</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">3DS Piranha Plant Slide</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Petey Piranha</td>
+            
+            <td align="left">5</td>
+            
+            <td align="left">1190</td>
+            
+            <td align="left">Blue Crawly Kart</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">8-Bit Super Glider</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">490</td>
+            
+            <td align="left">47,187</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left">Petey Piranha</td>
+                
+            
+                
+                    <td align="left">5</td>
+                
+            
+                
+                    <td align="left">1190</td>
+                
+            
+                
+                    <td align="left">Blue Crawly Kart</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Piranha Plant Balloons</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">7</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">805</td>
+                
+            
+                
+                    <td align="left">55,472</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">8,285</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">Piranha Plant Cove 2R/T</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Koopa (Freerunning)</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">1080</td>
+            
+            <td align="left">Silver Cupid's Arrow</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Wonderful Garnet</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">715</td>
+            
+            <td align="left">43,798</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Donkey Kong Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">2250</td>
+                
+            
+                
+                    <td align="left">Silver Cupid's Arrow</td>
+                
+            
+                
+                    <td align="left">6</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left">Wonderful Garnet</td>
+                
+            
+                
+                    <td align="left">6</td>
+                
+            
+                
+                    <td align="left">715</td>
+                
+            
+                
+                    <td align="left">65,232</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">21,434</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">GCN Dino Dino Jungle T</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Bowser</td>
+            
+            <td align="left">5</td>
+            
+            <td align="left">675</td>
+            
+            <td align="left">Rambi Rider</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">492</td>
+            
+            <td align="left">Shell Parachute</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">408</td>
+            
+            <td align="left">35,653</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Donkey Kong Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">2250</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">Desert Tiny Titan</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">805</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Shell Parachute</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">492</td>
+                
+            
+                
+                    <td align="left">72,486</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">36,833</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">GBA Sunset Wilds R</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Daisy Mii Racing Suit</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Tropical Truck</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">715</td>
+            
+            <td align="left">Wiggler Parachute</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">595</td>
+            
+            <td align="left">53,691</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left">Daisy Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">2250</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">Tropical Truck</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">7</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">805</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Sunset Balloons</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">805</td>
+                
+            
+                
+                    <td align="left">58,631</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">4,940</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">GBA Battle Course 1</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Morton Mii Racing Suit</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Dasher II</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">492</td>
+            
+            <td align="left">8-Bit Jumping Luigi</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">456</td>
+            
+            <td align="left">57,656</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left">Morton Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">2250</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">Dasher II</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">492</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8-Bit Jumping Luigi</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">492</td>
+                
+            
+                
+                    <td align="left">59,837</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">2,181</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">N64 Kalimari Desert 2R/T</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Toad (Tourist)</td>
+            
+            <td align="left">5</td>
+            
+            <td align="left">1190</td>
+            
+            <td align="left">Tropical Truck</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">715</td>
+            
+            <td align="left">Smiley Flower Glider</td>
+            
+            <td align="left">5</td>
+            
+            <td align="left">595</td>
+            
+            <td align="left">37,197</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Pauline (Cowgirl)</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">4</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">1190</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">Tropical Truck</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">7</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">805</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Wonderful Wings</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">5</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">805</td>
+                
+            
+                
+                    <td align="left">39,106</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">1,909</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">Piranha Plant Cove T</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Bronze Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">1620</td>
+            
+            <td align="left">Blue Crawly Kart</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Candlelight Flight Cake</td>
+            
+            <td align="left">5</td>
+            
+            <td align="left">490</td>
+            
+            <td align="left">44,946</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Donkey Kong Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">2250</td>
+                
+            
+                
+                    <td align="left">Blue Crawly Kart</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Wonderful Wings</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">5</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">805</td>
+                
+            
+                
+                    <td align="left">67,758</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">22,812</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">Piranha Plant Pipeline R</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Gold Mario</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">1190</td>
+            
+            <td align="left">Black B Dasher Mk. 2</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Oilpaper Umbrella</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">492</td>
+            
+            <td align="left">49,234</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Green Toad (Pit Crew)</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">1080</td>
+                
+            
+                
+                    <td align="left">Black B Dasher Mk. 2</td>
+                
+            
+                
+                    <td align="left">6</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left">Oilpaper Umbrella</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">492</td>
+                
+            
+                
+                    <td align="left">49,385</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">151</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">Wii Dry Dry Ruins R</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Larry Mii Racing Suit</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">2070</td>
+            
+            <td align="left">Black Shielded Speedster</td>
+            
+            <td align="left">4</td>
+            
+            <td align="left">490</td>
+            
+            <td align="left">Gold Candlelight Flight</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">61,928</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Petey Piranha Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">2250</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">Yellow Turbo Yoshi</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">492</td>
+                
+            
+                
+                    <td align="left">Gold Candlelight Flight</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left">73,062</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">11,134</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">GBA Yoshi Desert R/T</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Morton Mii Racing Suit</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Yellow Turbo Birdo</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">456</td>
+            
+            <td align="left">Gold Candlelight Flight</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">65,945</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left">Morton Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">2250</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">Desert Tiny Titan</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">805</td>
+                
+            
+                
+                    <td align="left">Gold Candlelight Flight</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left">72,004</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">6,059</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">N64 Kalimari Desert R/T</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Larry</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">816</td>
+            
+            <td align="left">Koopa Clown</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">330</td>
+            
+            <td align="left">Gold Candlelight Flight</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">48,106</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left">Larry</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">816</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">Koopa Clown</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">6</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">492</td>
+                
+            
+                
+                    <td align="left">Gold Candlelight Flight</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left">50,078</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">1,972</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">3DS Piranha Plant Slide R</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Petey Piranha</td>
+            
+            <td align="left">5</td>
+            
+            <td align="left">1190</td>
+            
+            <td align="left">Red Comet</td>
+            
+            <td align="left">4</td>
+            
+            <td align="left">595</td>
+            
+            <td align="left">Icy Mario's Mustache</td>
+            
+            <td align="left">4</td>
+            
+            <td align="left">490</td>
+            
+            <td align="left">38,232</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Petey Piranha Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">2250</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">Red Comet</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">5</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">715</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Piranha Plant Balloons</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">7</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">805</td>
+                
+            
+                
+                    <td align="left">70,672</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">32,440</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">GCN Dino Dino Jungle R/T</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Wiggler Mii Racing Suit</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Green Cheep Charger</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">408</td>
+            
+            <td align="left">Wiggler Parachute</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">595</td>
+            
+            <td align="left">67,783</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Morton Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">2250</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">Green Comet</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">6</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">805</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Wiggler Parachute</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">7</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">805</td>
+                
+            
+                
+                    <td align="left">75,012</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">7,229</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">GBA Sunset Wilds R/T</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Wiggler Mii Racing Suit</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Cucumber</td>
+            
+            <td align="left">5</td>
+            
+            <td align="left">366</td>
+            
+            <td align="left">Sunset Balloons</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">400</td>
+            
+            <td align="left">61,700</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left">Wiggler Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">2250</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">Desert Tiny Titan</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">805</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Sunset Balloons</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">805</td>
+                
+            
+                
+                    <td align="left">76,488</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">14,788</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">Piranha Plant Cove 2</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Wiggler Mii Racing Suit</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Black B Dasher Mk. 2</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Wonderful Diamond</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">70,427</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Petey Piranha Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">2250</td>
+                
+            
+                
+                    <td align="left">Black B Dasher Mk. 2</td>
+                
+            
+                
+                    <td align="left">6</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left">Wonderful Diamond</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left">75,038</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">4,611</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">DS Twilight House</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Santa Mii Racing Suit</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">1830</td>
+            
+            <td align="left">Blue Crawly Kart</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Sunset Balloons</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">400</td>
+            
+            <td align="left">59,818</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left">Santa Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left">7</td>
+                
+            
+                
+                    <td align="left">1830</td>
+                
+            
+                
+                    <td align="left">Blue Crawly Kart</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Sunset Balloons</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">805</td>
+                
+            
+                
+                    <td align="left">65,295</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">5,477</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">3DS Piranha Plant Slide R/T</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Petey Piranha</td>
+            
+            <td align="left">5</td>
+            
+            <td align="left">1190</td>
+            
+            <td align="left">Chain Chomp Chariot</td>
+            
+            <td align="left">5</td>
+            
+            <td align="left">715</td>
+            
+            <td align="left">Wicked Topaz</td>
+            
+            <td align="left">4</td>
+            
+            <td align="left">595</td>
+            
+            <td align="left">43,393</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Wiggler</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">6</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">1430</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">Green Comet</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">6</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">805</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Piranha Plant Balloons</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">7</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">805</td>
+                
+            
+                
+                    <td align="left">57,834</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">14,441</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">N64 Kalimari Desert 2R</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Bronze Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">1620</td>
+            
+            <td align="left">Choco Macharon</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">400</td>
+            
+            <td align="left">Wonderful Diamond</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">36,301</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Yellow Toad (Pit Crew)</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">8</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">1080</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">Choco Macharon</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">3</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">490</td>
+                
+            
+                
+                    <td align="left">Wonderful Diamond</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left">38,348</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">2,047</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">N64 Kalimari Desert T</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Daisy Mii Racing Suit</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Tropical Truck</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">715</td>
+            
+            <td align="left">Gold Candlelight Flight</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">67,154</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left">Daisy Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">2250</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">Tropical Truck</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">7</td>
+                
+            
+                
+                    <td align="left" bgcolor="#fff1d9">805</td>
+                
+            
+                
+                    <td align="left">Gold Candlelight Flight</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left">68,241</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">1,087</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">Piranha Plant Cove R/T</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Waluigi Mii Racing Suit</td>
+            
+            <td align="left">5</td>
+            
+            <td align="left">1620</td>
+            
+            <td align="left">Blue Crawly Kart</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Wonderful Diamond</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">49,599</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left">Waluigi Mii Racing Suit</td>
+                
+            
+                
+                    <td align="left">5</td>
+                
+            
+                
+                    <td align="left">1620</td>
+                
+            
+                
+                    <td align="left">Blue Crawly Kart</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left">Wonderful Diamond</td>
+                
+            
+                
+                    <td align="left">8</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left">49,599</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">0</td>
+            </tr>
+        
+            
+            <tr><td align="left" bgcolor="#a4e2ff">Piranha Plant Pipeline R/T</td></tr>
+            <tr>
+                <td align="left">Before</td>
+            
+            <td align="left">Petey Piranha (Gold)</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">800</td>
+            
+            <td align="left">Black B Dasher Mk. 2</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Royal Flush</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">715</td>
+            
+            <td align="left">40,735</td>
+            
+            </tr>
+            <tr>
+                <td align="left">After</td>
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Wiggler</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">6</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">1430</td>
+                
+            
+                
+                    <td align="left">Black B Dasher Mk. 2</td>
+                
+            
+                
+                    <td align="left">6</td>
+                
+            
+                
+                    <td align="left">805</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">Piranha Plant Balloons</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">7</td>
+                
+            
+                
+                    <td align="left" bgcolor="#ffdea8">805</td>
+                
+            
+                
+                    <td align="left">55,702</td>
+                
+            
+                <td align="left" bgcolor="#9aff79">14,967</td>
+            </tr>
+        
+        </tbody></table>
+        </div>
+
+        </div>
+      
+    
+        <button class="collapsible">Pre-fill for the DKR.exe sheet</button>
+        <div class="content">
+        <div class="table-responsive">
+        <table>
+        
+            <tbody><tr>
+            
+            <td align="left">Gold Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Blue Crawly Kart</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Wiggler Parachute</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Yellow Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">2070</td>
+            
+            <td align="left">Silver Cupid's Arrow</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Wonderful Diamond</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Wiggler Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Armored Rider</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Royal Flush</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">715</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Gold Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Desert Tiny Titan</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Luigi Golf Cap</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">595</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Donkey Kong Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Green Turbo Birdo</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">492</td>
+            
+            <td align="left">Wiggler Parachute</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Luigi (Gold Knight)</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">1430</td>
+            
+            <td align="left">Silver Cupid's Arrow</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Sunset Balloons</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Petey Piranha Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Black B Dasher Mk. 2</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Piranha Plant Balloons</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Wiggler Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Armored Rider</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Gold Candlelight Flight</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Daisy Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Desert Tiny Titan</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Wonderful Diamond</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Gold Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Dasher II</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">492</td>
+            
+            <td align="left">8-Bit Jumping Luigi</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">492</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Gold Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Rambi Rider</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">492</td>
+            
+            <td align="left">Sunset Balloons</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Petey Piranha Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Blue Crawly Kart</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Wonderful Wings</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">5</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Petey Piranha Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Blue Crawly Kart</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Gold Candlelight Flight</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Yellow Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">2070</td>
+            
+            <td align="left">Red Turbo Birdo</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">492</td>
+            
+            <td align="left">8-Bit Block Glider</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">715</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Larry Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">2070</td>
+            
+            <td align="left">Desert Tiny Titan</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Luigi Golf Cap</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">595</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Morton Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">DK Jumbo</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">492</td>
+            
+            <td align="left">Oilpaper Umbrella</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">492</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Donkey Kong Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Desert Tiny Titan</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Smiley Flower Glider</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">5</td>
+            
+            <td align="left">715</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Kamek</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">980</td>
+            
+            <td align="left">Blue Crawly Kart</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Sunset Balloons</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Daisy Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Tropical Truck</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Sunset Balloons</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Toad (Tourist)</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">5</td>
+            
+            <td align="left">1190</td>
+            
+            <td align="left">Green Comet</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Wiggler Parachute</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Larry Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">2070</td>
+            
+            <td align="left">Blue Crawly Kart</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Gold Candlelight Flight</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Yellow Toad (Pit Crew)</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">1080</td>
+            
+            <td align="left">Yellow Turbo Yoshi</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">492</td>
+            
+            <td align="left">Sunset Balloons</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Gold Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Desert Tiny Titan</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Golden Glider</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">5</td>
+            
+            <td align="left">715</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Gold Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Red Turbo Birdo</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">492</td>
+            
+            <td align="left">Piranha Plant Balloons</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Petey Piranha</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">5</td>
+            
+            <td align="left">1190</td>
+            
+            <td align="left">Blue Crawly Kart</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Piranha Plant Balloons</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Donkey Kong Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Silver Cupid's Arrow</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Wonderful Garnet</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">715</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Donkey Kong Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Desert Tiny Titan</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Shell Parachute</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">492</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Daisy Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Tropical Truck</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Sunset Balloons</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Morton Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Dasher II</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">492</td>
+            
+            <td align="left">8-Bit Jumping Luigi</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">492</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Toad (Tourist)</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">5</td>
+            
+            <td align="left">1190</td>
+            
+            <td align="left">Tropical Truck</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Smiley Flower Glider</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">5</td>
+            
+            <td align="left">715</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Donkey Kong Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Blue Crawly Kart</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Wonderful Wings</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">5</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Green Toad (Pit Crew)</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">1080</td>
+            
+            <td align="left">Silver Cupid's Arrow</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Oilpaper Umbrella</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">492</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Petey Piranha Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Yellow Turbo Yoshi</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">492</td>
+            
+            <td align="left">Gold Candlelight Flight</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Morton Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Desert Tiny Titan</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Gold Candlelight Flight</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Larry</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">816</td>
+            
+            <td align="left">Koopa Clown</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">492</td>
+            
+            <td align="left">Gold Candlelight Flight</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Petey Piranha Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Red Comet</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">5</td>
+            
+            <td align="left">715</td>
+            
+            <td align="left">Piranha Plant Balloons</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Morton Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Green Comet</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Wiggler Parachute</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Wiggler Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Desert Tiny Titan</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Sunset Balloons</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Petey Piranha Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Black B Dasher Mk. 2</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Wonderful Diamond</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Santa Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">1830</td>
+            
+            <td align="left">Blue Crawly Kart</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Sunset Balloons</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Wiggler</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">1430</td>
+            
+            <td align="left">Green Comet</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Piranha Plant Balloons</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Yellow Toad (Pit Crew)</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">1080</td>
+            
+            <td align="left">Choco Macharon</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">490</td>
+            
+            <td align="left">Wonderful Diamond</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Daisy Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">2250</td>
+            
+            <td align="left">Tropical Truck</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Gold Candlelight Flight</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Waluigi Mii Racing Suit</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">5</td>
+            
+            <td align="left">1620</td>
+            
+            <td align="left">Blue Crawly Kart</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Wonderful Diamond</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">8</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+            <tr>
+            
+            <td align="left">Wiggler</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">1430</td>
+            
+            <td align="left">Black B Dasher Mk. 2</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">6</td>
+            
+            <td align="left">805</td>
+            
+            <td align="left">Piranha Plant Balloons</td>
+            
+            <td align="left">3</td>
+            
+            <td align="left">7</td>
+            
+            <td align="left">805</td>
+            
+            </tr>
+        
+        </tbody></table>
+        </div>
+        You should be able to select this table and copy-paste it straight into Google Sheets. If it doesn't work, please try
+        a different browser.
+        </div>
+      
+    
+        <button class="collapsible">Usage statistics</button>
+        <div class="content">
+        <div class="table-responsive">
+        <table>
+            <tbody><tr>
+                <th>Drivers</th>
+                <th>Karts</th>
+                <th>Gliders</th>
+            </tr>
+            <tr>
+                <td align="left" valign="top">
+                    <table>
+                    
+                        <tbody><tr>
+                            <td align="left">Petey Piranha Mii Racing Suit</td>
+                            <td>6</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Gold Mii Racing Suit</td>
+                            <td>5</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Donkey Kong Mii Racing Suit</td>
+                            <td>5</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Wiggler Mii Racing Suit</td>
+                            <td>4</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Daisy Mii Racing Suit</td>
+                            <td>4</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Morton Mii Racing Suit</td>
+                            <td>4</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Yellow Mii Racing Suit</td>
+                            <td>2</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Larry Mii Racing Suit</td>
+                            <td>2</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Yellow Toad (Pit Crew)</td>
+                            <td>2</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Wiggler</td>
+                            <td>2</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Luigi (Gold Knight)</td>
+                            <td>1</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Kamek</td>
+                            <td>1</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Toad (Tourist)</td>
+                            <td>1</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Petey Piranha</td>
+                            <td>1</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Pauline (Cowgirl)</td>
+                            <td>1</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Green Toad (Pit Crew)</td>
+                            <td>1</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Larry</td>
+                            <td>1</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Santa Mii Racing Suit</td>
+                            <td>1</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Waluigi Mii Racing Suit</td>
+                            <td>1</td>
+                        </tr>
+                    
+                    </tbody></table>
+                </td>
+                <td align="left" valign="top">
+                    <table>
+                    
+                        <tbody><tr>
+                            <td align="left">Blue Crawly Kart</td>
+                            <td>9</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Desert Tiny Titan</td>
+                            <td>8</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Black B Dasher Mk. 2</td>
+                            <td>4</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Tropical Truck</td>
+                            <td>4</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Silver Cupid's Arrow</td>
+                            <td>3</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Green Comet</td>
+                            <td>3</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Armored Rider</td>
+                            <td>2</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Dasher II</td>
+                            <td>2</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Red Turbo Birdo</td>
+                            <td>2</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Yellow Turbo Yoshi</td>
+                            <td>2</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Green Turbo Birdo</td>
+                            <td>1</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Rambi Rider</td>
+                            <td>1</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">DK Jumbo</td>
+                            <td>1</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Koopa Clown</td>
+                            <td>1</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Red Comet</td>
+                            <td>1</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Choco Macharon</td>
+                            <td>1</td>
+                        </tr>
+                    
+                    </tbody></table>
+                </td>
+                <td align="left" valign="top">
+                    <table>
+                    
+                        <tbody><tr>
+                            <td align="left">Sunset Balloons</td>
+                            <td>8</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Gold Candlelight Flight</td>
+                            <td>7</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Piranha Plant Balloons</td>
+                            <td>6</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Wonderful Diamond</td>
+                            <td>5</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Wiggler Parachute</td>
+                            <td>4</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Wonderful Wings</td>
+                            <td>3</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Luigi Golf Cap</td>
+                            <td>2</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">8-Bit Jumping Luigi</td>
+                            <td>2</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Oilpaper Umbrella</td>
+                            <td>2</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Royal Flush</td>
+                            <td>1</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">8-Bit Block Glider</td>
+                            <td>1</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Smiley Flower Glider</td>
+                            <td>1</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Golden Glider</td>
+                            <td>1</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Wonderful Garnet</td>
+                            <td>1</td>
+                        </tr>
+                    
+                        <tr>
+                            <td align="left">Shell Parachute</td>
+                            <td>1</td>
+                        </tr>
+                    
+                    </tbody></table>
+                </td>
+            </tr>
+        </tbody></table>
+        </div>
+        </div>
+      
+      <br>
+      <button onclick="goBack()">Go Back</button>
+
+
+    <script>
+        function goBack() {
+          window.history.back();
+        }
+    </script>
+
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+    </script>
+
+  <script>
+    const collapsibles = ["collapsible-small-green"]
+    for (const element of collapsibles) {
+      var coll = document.getElementsByClassName(element);
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    }
+  </script>
+  <script src="./Pipe Tour 2026 no Gold Piranha and WEgg (june 2026) Ticket Optimizer_files/jquery-3.3.1.slim.min.js.download" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="./Pipe Tour 2026 no Gold Piranha and WEgg (june 2026) Ticket Optimizer_files/popper.min.js.download" integrity="sha384-12mBxGmwEWnkcLyfP2A6fyOSahUXf2znoIhY6ZJG6CGNlNWp3qSS1iU6yfON6C6e" crossorigin="anonymous"></script>
+  <script src="./Pipe Tour 2026 no Gold Piranha and WEgg (june 2026) Ticket Optimizer_files/bootstrap.min.js.download" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+  
+</body></html>
